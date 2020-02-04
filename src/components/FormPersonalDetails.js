@@ -20,6 +20,13 @@ export class FormPersonalDetails extends Component {
                 <React.Fragment>
                     <AppBar title="Enter Personal Details"/>
                     <TextField 
+                        hintText = "Enter your occupation"
+                        floatingLabelText = "Occupation"
+                        onChange = {handleChange('occupation')}
+                        defaultValue = {values.occupation}
+                    />
+                    <br/>
+                    <TextField 
                         hintText = "Enter your city"
                         floatingLabelText = "City"
                         onChange = {handleChange('city')}

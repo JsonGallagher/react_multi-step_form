@@ -37,20 +37,12 @@ export class FormUserDetails extends Component {
                         defaultValue = {values.email}
                     />
                     <br/>
-                    <TextField 
-                        hintText = "Enter your occupation"
-                        floatingLabelText = "Occupation"
-                        onChange = {handleChange('occupation')}
-                        defaultValue = {values.occupation}
-                    />
-                    <br/>
                     <RaisedButton 
                         label = "Continue"
                         primary = {true}
                         style = {styles.button}
                         onClick = {this.continue}
                     />
-
                 </React.Fragment>
             </MuiThemeProvider>
         )
